@@ -11,7 +11,7 @@ class Node:
         self.username = username
         self.password = password
 
-    def __dict__(self) -> dict:
+    def as_dict(self) -> dict:
         return {
             "address": self.host,
             "port": self.port,
