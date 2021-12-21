@@ -47,10 +47,6 @@ class ConnectionManager:
 
         self.reader = reader
         self.writer = writer
-
-        self.send({}, self.OP_INSERT)
-        print(await self.read())
-
         return (reader, writer)
 
     def send(self, data):
